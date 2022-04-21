@@ -15,17 +15,17 @@ function Nav() {
                     </a>
                 </li>
                 <li>
-                    <a href="portfolio">
+                    <a href="#portfolio">
                         Portfolio
                     </a>
                 </li>
                 <li>
-                    <a href="contact">
+                    <a href="#contact">
                         Contact    
                     </a>
                 </li>
                 <li>
-                    <a href="resume">
+                    <a href="#resume">
                         Resume
                     </a>
                 </li>
@@ -36,3 +36,4 @@ function Nav() {
 }
 
 export default Nav;
+

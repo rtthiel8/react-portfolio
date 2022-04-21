@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background: darkcyan;
+  color: azure;
+}
+
+nav li {
+  display: inline-block;
+  margin: 5px;
+}
+
+a {
+  color: whitesmoke
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(35deg, lightgreen, navy) ;
+}
+
+header h2 {
+  background: grey;
+  padding: 10px;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+
