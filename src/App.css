@@ -64,4 +64,11 @@ header h2 {
   margin-left: 20px;
 }
 
+label {
+  margin: 20px;
 
+}
+
+button {
+  margin: 10px;
+}

@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import './App.css';
-import Nav from './components/Nav';
 import About from './components/About';
 import Project from './components/Project';
 import ContactForm from './components/Contact';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
+
+  
 
 
   const [projects] = useState([
@@ -35,9 +38,8 @@ function App() {
 
   return (
     <div>
-      <Nav />
+      <Header />
       <main>
-
         <About />
         <Project
           projects={projects}
@@ -46,6 +48,7 @@ function App() {
         ></Project>
         <ContactForm />
       </main>
+      <Footer />
     </div>
   );
 }

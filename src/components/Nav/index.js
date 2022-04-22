@@ -1,39 +1,65 @@
 import React from 'react';
 
-function Nav() {
+function Nav(props) {
 
-  return (
-    <header>
-        <h2>
-            Ryan Thiel
-        </h2>
+
+    const {
+        sections = [],
+        setCurrentSection,
+        currentSection
+    } = props;
+
+    return (
+
         <nav>
-            <ul className="flex-row">
-                <li className='mx-2'>
-                    <a href="#about">
-                        About Me
-                    </a>
-                </li>
-                <li>
-                    <a href="#portfolio">
-                        Portfolio
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact">
-                        Contact    
-                    </a>
-                </li>
-                <li>
-                    <a href="#resume">
-                        Resume
-                    </a>
-                </li>
+            <ul className='flex-row'>
+                {sections.map((section) => (
+                    <li
+                        className={`mx-2 ${currentSection.name === section.name
+                            }`}
+                        key={section.name}
+                        onClick={() => {
+                            setCurrentSection(section)
+                        }}
+                    >
+
+                        <a href='#${section.name}'>
+                            {section.name}
+                        </a>
+                    </li>
+                ))}
+
             </ul>
         </nav>
-    </header>
-  );
+    )
 }
+
+// <nav>
+//     <ul className="flex-row">
+//         <li className='mx-2'>
+//             <a href="#about" onClick={() => setCurrentSection(true)}>
+//                 About Me
+//             </a>
+//         </li>
+//         <li>
+//             <a href="#portfolio" onClick={() => setCurrentSection(false)}>
+//                 Portfolio
+//             </a>
+//         </li>
+//         <li>
+//             <a href="#contact" onClick={() => setCurrentSection(false)}>
+//                 Contact    
+//             </a>
+//         </li>
+//         <li>
+//             <a href="#resume" onClick={() => setCurrentSection(false)}>
+//                 Resume
+//             </a>
+//         </li>
+//     </ul>
+// </nav>
+//     );
+// }
 
 export default Nav;
 
