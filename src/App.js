@@ -3,14 +3,13 @@ import './App.css';
 import About from './components/About';
 import Project from './components/Project';
 import ContactForm from './components/Contact';
+import Resume from './components/Resume';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
 
   
-
-
   const [projects] = useState([
     {
       title: "Project 1",
@@ -47,6 +46,7 @@ function App() {
           currentProject={currentProject}
         ></Project>
         <ContactForm />
+        <Resume />
       </main>
       <Footer />
     </div>

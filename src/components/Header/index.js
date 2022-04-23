@@ -3,6 +3,7 @@ import Nav from "../Nav";
 
 function Header() {
 
+    // const [sectionSelected, setSectionSelected] = useState(false);
  
     const [sections] = useState([
         {
@@ -30,7 +31,6 @@ function Header() {
         sections={sections}
         setCurrentSection={setCurrentSection}
         currentSection={currentSection}
-
         ></Nav>
         </header>
     )
