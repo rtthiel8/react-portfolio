@@ -14,11 +14,11 @@ function Nav(props) {
             <ul className='flex-row'>
                 {sections.map((section) => (
                     <li
-                        className={`mx-2 ${currentSection.name === section.name
+                        className={`mx-2 ${currentSection.name === section.name && 'navActive'
                             }`}
                         key={section.name}
                     >
-                        <a href={section.name} onClick={(e) => {
+                        <a href="#{section.name}" onClick={(e) => {
                             e.preventDefault()
                             setCurrentSection(section)
                         }} >

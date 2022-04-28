@@ -4,9 +4,9 @@ function Footer() {
 
     return (
 
-        <footer>
+        <footer id="footer">
             <h3>
-                My footer!
+                Thanks for visiting.
             </h3>
         </footer>
 
