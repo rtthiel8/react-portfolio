@@ -52,8 +52,13 @@ a {
   font-size: 40px;
 }
 
-.navActive {
+/* .navActive {
   background-color: #61dafb;  
+  color: black;
+} */
+
+nav ul li a:focus {
+  color: black
 }
 
 header {
@@ -78,6 +83,16 @@ button {
   margin: 10px;
 }
 
+#stylized {
+  width: 400px;
+  background: rgb(9, 147, 246);
+  border:solid 1px darkmagenta;
+  padding: 20px;
+  border-radius: 8px;
+  margin-left: 10px;
+  box-shadow: 5px 5px 15px black;
+}
+
 #stylized input {
     display: block;
     font-size:11px;
@@ -86,9 +101,10 @@ button {
     width:200px;
     height: 25px;
     margin:2px 0 20px 10px;
-}
-
-#stylized textarea {
+  }
+  
+  #stylized textarea {
+  border:solid 1px darkmagenta;
     margin: 10px 0 20px 10px;
 }
 
