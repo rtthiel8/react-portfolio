@@ -128,8 +128,8 @@ button {
 }
 
 img {
-  width: 400px;
-  height: 400px;
+  width: 250px;
+  height: 250px;
   border-radius: 8px;
 }
 
@@ -153,4 +153,32 @@ section ul {
 
 #about img {
   margin: 100px;
+}
+
+#contact-form {
+  position: relative;
+}
+
+.hide {
+  display: none;
+}
+
+.alert {
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  background: white;
+  color: red;
+  width: fit-content;
+  padding: 0 5px;
+  border: 2px solid black;
+  border-radius: 8px;
+box-shadow: 2px 2px 10px black;
+}
+
+.alert h3 {
+  margin: 0;
+}
+footer div img {
+  margin: 5px;
 }

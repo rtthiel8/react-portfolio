@@ -31,22 +31,32 @@ function ContactForm() {
         console.log(formState);
     }
 
+    function checkInput(e) {
+        e.target.value
+            ? e.target.removeClass('hide')
+            : e.target.addClass('alert')
+    }
+
     return (
         <section>
             <h1>Contact me</h1>
             <div id="stylized">
                 <form id="contact-form" onSubmit={handleSubmit}>
+                    <div className="hide">
+                        <h3>Field is required!</h3>
+                    </div>
+
                     <div>
                         <label htmlFor="name">Name:</label>
-                        <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
+                        <input type="text" defaultValue={name} onMouseOut={checkInput} onBlur={handleChange} name="name" />
                     </div>
                     <div>
                         <label htmlFor="email">Email:</label>
-                        <input type="email" defaultValue={email} name="email" onBlur={handleChange} />
+                        <input type="email" defaultValue={email} onMouseOut={checkInput} name="email" onBlur={handleChange} />
                     </div>
                     <div>
                         <label htmlFor="message">Message:</label><br />
-                        <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
+                        <textarea name="message" defaultValue={message} onMouseOut={checkInput} onBlur={handleChange} rows="5" />
                     </div>
                     {errorMessage && (
                         <div>

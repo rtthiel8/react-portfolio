@@ -26,6 +26,8 @@ function Project(props) {
                         <h6>
                             {project.description}
                         </h6>
+                        
+                        <a href={project.deployedLink}>
                         <button
                             onClick={() => {
                                 setCurrentProject(project)
@@ -33,11 +35,14 @@ function Project(props) {
                         >
                             See it here!
                         </button>
-                        <a href={project.GitHubLink}>
+                        </a>
+                        
+                        <a href={project.gitHubLink}>
                         <button>
                             Github
                         </button>
                         </a>
+                        
                         <div className="flex-row">
                             <img
                                 src={project.img}
@@ -48,7 +53,6 @@ function Project(props) {
                     </li>
                 ))}
             </ul>
-
         </section>
     )
 }
