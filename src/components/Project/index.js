@@ -1,5 +1,4 @@
 import React from "react";
-import Brewber from '../../assets/Brewber.png'
 
 function Project(props) {
 
@@ -34,12 +33,14 @@ function Project(props) {
                         >
                             See it here!
                         </button>
+                        <a href={project.GitHubLink}>
                         <button>
                             Github
                         </button>
+                        </a>
                         <div className="flex-row">
                             <img
-                                src={Brewber}
+                                src={project.img}
                                 alt=""
                                 className="img-thumbnail mx-1"
                             />

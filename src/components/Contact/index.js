@@ -41,7 +41,7 @@ function ContactForm() {
                         <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
                     </div>
                     <div>
-                        <label htmlFor="email">Email address:</label>
+                        <label htmlFor="email">Email:</label>
                         <input type="email" defaultValue={email} name="email" onBlur={handleChange} />
                     </div>
                     <div>
